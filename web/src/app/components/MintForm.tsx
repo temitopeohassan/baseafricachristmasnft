@@ -121,7 +121,7 @@ export default function MintForm() {
 
   const handleShareOnFarcaster = () => {
     window.open(
-      `https://warpcast.com/~/compose?text=I just minted my Base Africa Christmas NFT! 🎄 ${NFT_METADATA_URL}`,
+      `https://warpcast.com/~/compose?text=I just minted my Base Africa Christmas NFT! 🎄 https://baseafricachristmasnft.vercel.app/`,
       '_blank',
       'noopener,noreferrer'
     )
