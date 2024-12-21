@@ -8,7 +8,6 @@ import Image from 'next/image'
 const NFT_ADDRESS = '0x17167063E83BBE6bFfAa1Bf97fE1d916B6143832'
 const WHITELIST_ADDRESS = '0xeC38cABcc410C1aDED77317AFF735863930197af'
 const NFT_IMAGE_URL = 'https://puredelightfoods.com/images/nftdesign.png'
-const NFT_METADATA_URL = 'https://puredelightfoods.com/metadata.json'
 
 const WHITELIST_ABI = [{
   name: 'whitelistedAddresses',
@@ -193,7 +192,7 @@ export default function MintForm() {
                     onClick={handleShareOnFarcaster}
                     className="bg-purple-600 hover:bg-purple-700 text-white text-sm"
                   >
-                    Share on Farcaster
+                    Share on Warpcast
                   </Button>
                 </div>
               </div>
