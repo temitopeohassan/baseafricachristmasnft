@@ -1,6 +1,6 @@
 'use client'
 
-import { Button, Text, Flex, Card } from '@radix-ui/themes'
+import { Button, Text, Card } from '@radix-ui/themes'
 import { useAccount, useWriteContract, useWaitForTransactionReceipt, useReadContract, usePublicClient } from 'wagmi'
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
@@ -44,7 +44,6 @@ const NFT_ABI = [{
 export default function MintForm() {
   const { address } = useAccount()
   const [error, setError] = useState<string>('')
-  const [metadata, setMetadata] = useState<any>(null)
   const [tokenId, setTokenId] = useState<number | null>(null)
   const publicClient = usePublicClient()
 
