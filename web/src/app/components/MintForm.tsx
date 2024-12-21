@@ -5,8 +5,8 @@ import { useAccount, useWriteContract, useWaitForTransactionReceipt, useReadCont
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 
-const NFT_ADDRESS = '0x17167063E83BBE6bFfAa1Bf97fE1d916B6143832'
-const WHITELIST_ADDRESS = '0xeC38cABcc410C1aDED77317AFF735863930197af'
+const NFT_ADDRESS = '0x18be51d51f7dcC79fE037817b4bfb5E9cE09f784'
+const WHITELIST_ADDRESS = '0x589AB24Cd45cBE5F6Eb4ff93bD87f1c9Fbb0dE27'
 const NFT_IMAGE_URL = 'https://puredelightfoods.com/images/nftdesign.png'
 
 const WHITELIST_ABI = [{
