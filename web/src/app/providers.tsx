@@ -5,6 +5,7 @@ import { WagmiProvider } from 'wagmi'
 import { base } from 'wagmi/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { ReactNode } from 'react'
+import { Theme } from '@radix-ui/themes'
 
 const config = getDefaultConfig({
   appName: 'Base Africa Christmas NFT',
@@ -24,7 +25,9 @@ export function Providers({ children }: ProvidersProps) {
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
-          {children}
+          <Theme>
+            {children}
+          </Theme>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
