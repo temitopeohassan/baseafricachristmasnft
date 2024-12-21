@@ -8,6 +8,7 @@ import { baseSepolia } from 'wagmi/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Theme } from '@radix-ui/themes'
 import '@radix-ui/themes/styles.css'
+import { Providers } from './providers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -36,15 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <WagmiProvider config={config}>
-          <QueryClientProvider client={queryClient}>
-            <RainbowKitProvider>
-              <Theme>
-                {children}
-              </Theme>
-            </RainbowKitProvider>
-          </QueryClientProvider>
-        </WagmiProvider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
